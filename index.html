@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu Sun</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .navigation {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #e9ecef;
+            color: #0066cc;
+        }
+
+        .main-content {
+            padding: 0 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .header-right {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .section-content {
+            font-size: 1em;
+            text-align: justify;
+        }
+
+        .research-list {
+            margin-left: 20px;
+        }
+
+        .research-list li {
+            margin-bottom: 5px;
+        }
+
+        .publication {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .publication-venue {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .publication-title {
+            font-style: italic;
+        }
+
+        .publication-authors {
+            color: #333;
+        }
+
+        .publication-details {
+            color: #666;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 250px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+
+        .news-date {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .award-item {
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            margin-top: 0px;
+        }
+
+        .contact-section h3 {
+            display: none;
+        }
+
+        .contact-item {
+            margin-bottom: 8px;
+        }
+
+        .contact-links {
+            margin-top: 10px;
+        }
+
+        .contact-links strong {
+            display: inline;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .nav-links a {
+                font-size: 1em;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#news">News</a>
+            <a href="#publications">Publications</a>
+            <a href="#awards">Awards</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="header-left">
+                <h1 class="name">Yu Sun</h1>
+                <p class="title">PhD Student, Computer Science</p>
+                <div class="photo-placeholder">
+                    [Photo will be added here]
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:ysun23@gmu.edu">ysun23@gmu.edu</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Affiliation:</strong> George Mason University
+                    </div>
+                    <div class="contact-links">
+                        <strong>Links:</strong>
+                        <a href="#">Google Scholar</a> | 
+                        <a href="#">GitHub</a> | 
+                        <a href="#">LinkedIn</a> | 
+                        <a href="#">CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="section">
+        <h2 class="section-title" id="about">About</h2>
+        <div class="section-content">
+            I am currently pursuing a Ph.D. in the Department of Computer Science at George Mason University. I am affiliated with the [Lab Name] under the supervision of [Advisor Name]. Prior to my enrollment at George Mason University, I completed my Bachelor of Agricultural Sciences in Horticulture at Zhejiang University in 2020 and my Master of Science in Electronic Information at the University of Science and Technology of China in 2023. During the summer of [Year], I undertook an internship at [Company/Lab Name], where I was supervised by [Supervisor Name]. For further details or to contact me, please email me at <a href="mailto:ysun23@gmu.edu">ysun23@gmu.edu</a>.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" id="research">Research</h2>
+        <div class="section-content">
+            <ul class="research-list">
+                <li>System Reliability</li>
+                <li>GPU Architecture</li>
+                <li>Large Language Models</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" id="news">News</h2>
+        <div class="section-content">
+            <div class="news-item">
+                <span class="news-date">[Date]</span> - Paper accepted to SC '25!
+            </div>
+            <div class="news-item">
+                <span class="news-date">[Date]</span> - Paper accepted to HPDC '25!
+            </div>
+            <div class="news-item">
+                <span class="news-date">[Date]</span> - Started PhD at George Mason University.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" id="publications">Publications</h2>
+        <div class="section-content">
+            <div class="publication">
+                <span class="publication-venue">(SC'25)</span> 
+                <span class="publication-authors">Y. Sun, Z. Coalson, S. Hong, Z. Zhang, B. Fang and L. Yang.</span><br>
+                <span class="publication-title">"Demystifying the Resilience of Large Language Models: An End-to-End Perspective."</span><br>
+                <span class="publication-details">In the International Conference for High-Performance Computing, Networking, Storage, and Analysis (SC25), to appear.</span>
+                <a href="#">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+
+            <div class="publication">
+                <span class="publication-venue">(HPDC'25)</span> 
+                <span class="publication-authors">Y. Sun, Z. Zhu, C. Mulpuru, R. Gioiosa, Z. Zhang, B. Fang and L. Yang.</span><br>
+                <span class="publication-title">"FT2: First-Token-Inspired Online Fault Tolerance on Critical Layers for Generative Large Language Models."</span><br>
+                <span class="publication-details">In the 34th International Symposium on High-Performance Parallel and Distributed Computing (HPDC '25), to appear.</span>
+                <a href="#">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+
+            <div class="publication">
+                <span class="publication-venue">(IEEE JSTQE'23)</span> 
+                <span class="publication-authors">Y. Sun, R. Shi, X. Chen, J. Fang, Z. Smith and K. Chu.</span><br>
+                <span class="publication-title">"Quantification of Intra Embryonic Motions Through Label Free and Fast Imaging of Yolk Granules."</span><br>
+                <span class="publication-details">IEEE Journal of Selected Topics in Quantum Electronics, vol. 29, no. 4: Biophotonics, pp. 1-8, July-Aug. 2023.</span>
+                <a href="#">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+
+            <div class="publication">
+                <span class="publication-venue">(Frontiers in Physics'22)</span> 
+                <span class="publication-authors">Shi R†, Sun Y†, Fang J, Chen X, Smith ZJ and Chu K.</span><br>
+                <span class="publication-title">"Asymmetrical Illumination Enables Lipid Droplets Segmentation in Caenorhabditis elegans Using Epi-Illumination Dark Field Microscopy."</span><br>
+                <span class="publication-details">Front. Phys. 10:894797, 2022.</span>
+                <a href="#">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" id="awards">Awards</h2>
+        <div class="section-content">
+            <div class="award-item">
+                <span class="award-year">[Year]</span> - [Award Name]
+            </div>
+            <div class="award-item">
+                <span class="award-year">[Year]</span> - [Award Name]
+            </div>
+        </div>
+    </div>
+</body>
+</html>
